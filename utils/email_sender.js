@@ -1,14 +1,17 @@
-// load aws sdk and config.js 
-var aws = require('aws-sdk');
+
 const config = require('./config');
+
+// load aws sdk
+var aws = require('aws-sdk');
+
 // load aws config
-aws.config.loadFromPath('config');
+aws.config.loadFromPath(config);
 
 // load AWS SES
-var ses = new aws.SES({apiVersion: '2019-03-08'});
+var ses = new aws.SES({apiVersion: '2010-12-01'});
 
 // send to list
-var to = ['keerthivasan@gmail.com']
+var to = ['keerthivasan287@gmail.com']
 
 // this must relate to a verified SES account
 var from = 'keerthivasan287@gmail.com'
@@ -28,9 +31,8 @@ ses.sendEmail( {
                Data: 'Stop your messing around',
            }
         }
-   }
-}
-, function(err, data) {
+        }
+    }, function(err, data) {
     if(err) throw err
         console.log('Email sent:');
         console.log(data);
