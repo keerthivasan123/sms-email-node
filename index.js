@@ -21,7 +21,7 @@ aws.config.loadFromPath('config.json');
 var ses = new aws.SES({apiVersion: '2010-12-01'});
 
 // send to list
-var to = ['keerthivasan287@gmail.com']
+var to = ['keerthivasan287@gmail.com','keerthivasan372@gmail.com']
 
 // this must relate to a verified SES account
 var from = 'keerthivasan287@gmail.com'
