@@ -9,7 +9,7 @@
   "author": "keerthivasan",
   "license": "ISC",
   "dependencies": {
-    "aws-sdk": "^2.503.0",
+    "aws-sdk": "^2.814.0",
     "body-parser": "^1.19.0",
     "dotenv": "^8.0.0",
     "ejs": "^2.6.2",
